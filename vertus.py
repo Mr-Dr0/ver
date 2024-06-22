@@ -76,9 +76,9 @@ async def run_tasks():
     print(f"{Fore.CYAN}Hi Sir, welcome back!{Style.RESET_ALL}\n")
     for token in tokens:
         await main(token)
-        await asyncio.sleep(5)  # Menambahkan jeda 5 detik antara setiap permintaan
+        await asyncio.sleep(7)  # Menambahkan jeda 5 detik antara setiap permintaan
         await claim(token)
-        await asyncio.sleep(5)  # Menambahkan jeda 5 detik antara setiap permintaan
+        await asyncio.sleep(7)  # Menambahkan jeda 5 detik antara setiap permintaan
 
 if __name__ == "__main__":
     asyncio.run(run_tasks())

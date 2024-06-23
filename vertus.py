@@ -11,7 +11,7 @@ init()
 url = "https://api.thevertus.app/users/get-data"
 
 headers = {
-    "Authorization": None,  # Token akan di-set nanti setelah diambil dari file key.txt
+    "Authorization": None,  
     "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.159 Mobile Safari/537.36",
     "Sec-Ch-Ua": '"Not A;Brand";v="99", "Chromium";v="119", "Google Chrome";v="119"',
     "Accept": "application/json, text/plain, */*",

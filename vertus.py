@@ -5,10 +5,10 @@ import json
 from colorama import Fore, Style, init
 import asyncio
 
-
+# Inisialisasi Colorama untuk Windows
 init()
 
-url = "https://api3.thevertus.app/users/get-data"
+url = "https://api.thevertus.app/users/get-data"
 
 headers = {
     "Authorization": None,  # Token akan di-set nanti setelah diambil dari file key.txt
@@ -56,7 +56,7 @@ async def claim(token):
         headers["Authorization"] = f"Bearer {token}"
 
         start_time = time.time()
-        response = await client.post("https://api3.thevertus.app/game-service/collect", headers=headers, json={})
+        response = await client.post("https://api.thevertus.app/game-service/collect", headers=headers, json={})
         end_time = time.time()
 
         if response.status_code == 201:

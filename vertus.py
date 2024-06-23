@@ -5,7 +5,7 @@ import json
 from colorama import Fore, Style, init
 import asyncio
 
-# Inisialisasi Colorama untuk Windows
+
 init()
 
 url = "https://api3.thevertus.app/users/get-data"
